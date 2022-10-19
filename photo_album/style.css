@@ -1,0 +1,206 @@
+.jumbotron h1{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+.jumbotron p{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.jumbotron {
+    animation: downAnimation ease 3.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes downAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width :300px){
+    .jumbotron h1{
+        font-size: 50px;
+    }
+    .jumbotron p{
+        font-size: 10px;
+    }
+    .icons{
+        font-size: 10px;
+    }
+    h2{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width :750px){
+    .jumbotron h1{
+        font-size: 100px;
+    }
+    .jumbotron p{
+        font-size: 25px;
+    }
+    .icons{
+        font-size: 30px;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width :1000px){
+    .jumbotron h1{
+        font-size: 150px;
+    }
+    .jumbotron p{
+        font-size: 40px;
+    }
+    .icons{
+        font-size: 50px;
+    }
+    h2{
+        font-size: 35px;
+    }
+}
+
+
+#image-background {
+    position: relative;
+    overflow: hidden;
+}
+
+#image-background::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://images.ctfassets.net/ihlmn42cjuv0/stXJ9qE7byTWJi43MADpn/c12e75523f4439c0fc1ec3b0da9e809e/hero-calgary.jpg?fit=fill&w=1346&h=838&fm=jpg&q=93);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -9;
+    animation: zoomIn 30s ease;
+    animation-delay: 120ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.navbar-brand{
+    font-family: 'Indie Flower', cursive;
+}
+
+.navbar-brand:hover{
+    transform: scale(1.1);
+    color: coral;
+}
+
+.nav-item {
+    position: relative;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    background-color: rgb(156, 156, 156);
+    height: 2px;
+    width: 0;
+    left: auto;
+    right: auto;
+    bottom: -2px;
+    transition: all .3s ease-in-out;
+}
+
+.nav-item:hover::after {
+    width: 45%;
+}
+
+.home-info{
+    margin-top: 100px;
+    height: 200px;
+    text-align: center;
+}
+
+.container1{
+    height: 500px;
+    background-image: url(https://www.ucalgary.ca/sites/default/homepage/files/styles/ucws_banner_large_desktop_short_full_width/public/2022-03/GettyImages-1266130268.jpg?h=5f940fcf&itok=Ki9uF9NQ);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.quote{
+    font-family: 'Satisfy', cursive;
+}
+
+.row-text{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.fill{
+    overflow: hidden;
+}
+
+.fill img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+#icon-container{
+    display: flex;
+    justify-content: center;
+}
+
+.icons:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+.footer{
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.card img:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.caption{
+    font-size: 60px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.form-section{
+    margin-top: 150px;
+    margin-bottom: 250px;
+}
+
+.hover{
+    border: 3px solid black;
+}
